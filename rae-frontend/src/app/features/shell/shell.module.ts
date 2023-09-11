@@ -1,17 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 
+import { SharedModule } from 'src/app/shared/shared.module';
 import { ShellRoutingModule } from './shell-routing.module';
 import { PageDashboardComponent } from './page-dashboard/page-dashboard.component';
 
-
 @NgModule({
-  declarations: [
-    PageDashboardComponent
-  ],
-  imports: [
-    CommonModule,
-    ShellRoutingModule
-  ]
+  declarations: [PageDashboardComponent],
+  imports: [SharedModule, ShellRoutingModule],
 })
-export class ShellModule { }
+export class ShellModule {}
