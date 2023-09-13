@@ -5,7 +5,13 @@ header {
   z-index: 1000;
 
   .navbar {
+    display: flex;
+    background-color: #333;
+    overflow: hidden;
     justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
   }
 }
 
