@@ -10,9 +10,36 @@ body {
   font-family: "Gill Sans", "Helvetica Neue", sans-serif !important;
 }
 
+h2 {
+  font-family: "Gill Sans Bold", "Helvetica Neue", sans-serif !important;
+}
+
+h3 {
+  font-family: "Gill Sans Medium", "Helvetica Neue", sans-serif !important;
+}
+
+i {
+  font-family: "Gill Sans Italic", "Helvetica Neue", sans-serif !important;
+}
+
 @font-face {
   font-family: "Gill Sans";
   src: url("assets/fonts/Gill_Sans.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gill Sans Bold";
+  src: url("assets/fonts/Gill_Sans_Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gill Sans Medium";
+  src: url("assets/fonts/Gill_Sans_Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Gill Sans Italic";
+  src: url("assets/fonts/Gill_Sans_Italic.otf") format("opentype");
 }
 
 @font-face {
