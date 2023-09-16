@@ -14,6 +14,13 @@ const routes: Routes = [
     },
     children: [
       {
+        path: ShellRoutes.HOME,
+        loadChildren: () =>
+          import('../home/home-routing.module').then(
+            (m) => m.HomeRoutingModule
+          ),
+      },
+      {
         path: ShellRoutes.ABOUT,
         loadChildren: () =>
           import('../about/about-routing.module').then(
@@ -34,7 +41,7 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: ShellRoutes.MODULE_PATH,
+        redirectTo: ShellRoutes.HOME,
         pathMatch: 'full',
       },
     ],
