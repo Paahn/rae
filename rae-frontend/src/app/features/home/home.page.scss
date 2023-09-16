@@ -1,0 +1,46 @@
+// .hero {
+//   height: 300px;
+//   // position: relative;
+//   text-align: center;
+//   color: #000;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   .hero-content {
+//     position: absolute;
+//     background-image: url("/src/assets/images/header.jpg");
+
+//     max-width: 1200px;
+//     width: 100%;
+//     z-index: -1;
+//     height: auto;
+//     img {
+//       position: unset !important;
+//     }
+//   }
+// }
+.hero {
+  background-image: url("/assets/images/Header.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 900px;
+  height: auto;
+  min-height: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 840px) {
+  .hero {
+    background-image: url("/assets/images/header-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // width: 300px;
+    object-fit: cover;
+    height: auto;
+    // min-height: 280px;
+    display: flex;
+    justify-content: center;
+  }
+}
