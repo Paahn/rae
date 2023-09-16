@@ -1,0 +1,24 @@
+.hero {
+  background-image: url("/assets/images/Plasticulture.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 900px;
+  height: auto;
+  min-height: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 840px) {
+  .hero {
+    background-image: url("/assets/images/Plasticulture.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 300px;
+    min-height: 80px;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+  }
+}

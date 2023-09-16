@@ -1,0 +1,11 @@
+$color1: #7dc24b;
+$color2: #39700a;
+$color3: #a1ee64;
+
+.page-title {
+  background-color: $color3;
+  & h2 {
+    margin: 0;
+    padding: 15px;
+  }
+}

@@ -14,11 +14,35 @@ const routes: Routes = [
     },
     children: [
       {
+        path: ShellRoutes.HOME,
+        loadChildren: () =>
+          import('../home/home-routing.module').then(
+            (m) => m.HomeRoutingModule
+          ),
+      },
+      {
         path: ShellRoutes.ABOUT,
         loadChildren: () =>
           import('../about/about-routing.module').then(
             (m) => m.AboutRoutingModule
           ),
+      },
+      {
+        path: ShellRoutes.EXHIBITS,
+        loadChildren: () =>
+          import('../exhibits/exhibits.module').then((m) => m.ExhibitsModule),
+      },
+      {
+        path: ShellRoutes.CRAFTING_RECIPES,
+        loadChildren: () =>
+          import('../crafting-recipes/crafting-recipes.module').then(
+            (m) => m.CraftingRecipesModule
+          ),
+      },
+      {
+        path: '',
+        redirectTo: ShellRoutes.HOME,
+        pathMatch: 'full',
       },
     ],
   },
