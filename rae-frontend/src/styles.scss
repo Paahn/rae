@@ -7,5 +7,15 @@ body {
 }
 body {
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Gill Sans", "Helvetica Neue", sans-serif !important;
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url("assets/fonts/Gill_Sans.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Skia";
+  src: url("assets/fonts/Skia_Regular.ttf") format("truetype");
 }
