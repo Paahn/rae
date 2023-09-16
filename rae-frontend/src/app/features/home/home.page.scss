@@ -33,13 +33,13 @@
 
 @media screen and (max-width: 840px) {
   .hero {
-    background-image: url("/assets/images/header-mobile.jpg");
+    background-image: url("/assets/images/Header.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    // width: 300px;
-    object-fit: cover;
+    width: 300px;
+    min-height: 80px;
     height: auto;
-    // min-height: 280px;
+
     display: flex;
     justify-content: center;
   }
