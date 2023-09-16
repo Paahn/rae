@@ -21,6 +21,11 @@ const routes: Routes = [
           ),
       },
       {
+        path: ShellRoutes.EXHIBITS,
+        loadChildren: () =>
+          import('../exhibits/exhibits.module').then((m) => m.ExhibitsModule),
+      },
+      {
         path: ShellRoutes.CRAFTING_RECIPES,
         loadChildren: () =>
           import('../crafting-recipes/crafting-recipes.module').then(

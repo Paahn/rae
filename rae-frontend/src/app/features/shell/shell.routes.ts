@@ -3,4 +3,5 @@ export class ShellRoutes {
 
   public static ABOUT = 'about';
   public static CRAFTING_RECIPES = 'crafting-recipes';
+  public static EXHIBITS = 'exhibits';
 }
