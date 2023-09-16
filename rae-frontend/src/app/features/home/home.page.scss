@@ -31,6 +31,12 @@
   justify-content: center;
 }
 
+.disclaimer {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+}
+
 @media screen and (max-width: 840px) {
   .hero {
     background-image: url("/assets/images/Header.png");
@@ -42,5 +48,8 @@
 
     display: flex;
     justify-content: center;
+  }
+  .disclaimer {
+    width: 300px;
   }
 }
