@@ -20,6 +20,18 @@ const routes: Routes = [
             (m) => m.AboutRoutingModule
           ),
       },
+      {
+        path: ShellRoutes.CRAFTING_RECIPES,
+        loadChildren: () =>
+          import('../crafting-recipes/crafting-recipes.module').then(
+            (m) => m.CraftingRecipesModule
+          ),
+      },
+      {
+        path: '',
+        redirectTo: ShellRoutes.MODULE_PATH,
+        pathMatch: 'full',
+      },
     ],
   },
 ];
