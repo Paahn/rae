@@ -34,4 +34,7 @@ jobs:
     needs: build
     steps:
       - name: Deploy to GitHub Pages 🚀
-        uses: Paahn/rae@main
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: releases/v4
+          folder: .
