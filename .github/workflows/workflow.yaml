@@ -38,7 +38,3 @@ jobs:
 
       - name: Deploy to GitHub Pages 🚀
         uses: Paahn/rae@main
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: deploy_dist/rae
