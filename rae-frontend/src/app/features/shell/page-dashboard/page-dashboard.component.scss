@@ -28,6 +28,7 @@ mat-sidenav {
 mat-sidenav-container {
   height: calc(100vh - 65px);
 }
+
 .menu-button {
   width: 100%;
   display: flex;
@@ -55,5 +56,8 @@ mat-divider {
 @media screen and (max-width: 740px) {
   .content {
     margin: 40px;
+  }
+  .menu-button {
+    font-size: 0.8rem;
   }
 }
