@@ -12,7 +12,7 @@ jobs:
         working-directory: "./rae-frontend"
     steps:
       - uses: actions/checkout@v3
-      - run: npm run ci
+      - run: npm install
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
