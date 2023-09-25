@@ -16,6 +16,7 @@ jobs:
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
+          entryPoint: "./rae-frontend"
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_RENEGADEAPEEXHIBITS_3AF45 }}'
           projectId: renegadeapeexhibits-3af45
