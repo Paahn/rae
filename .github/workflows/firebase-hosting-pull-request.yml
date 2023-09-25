@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: cd /rae-frontend
+      - run: cd rae-frontend/**
       - run: npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
