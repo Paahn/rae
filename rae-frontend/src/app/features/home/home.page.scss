@@ -1,55 +1,76 @@
-// .hero {
-//   height: 300px;
-//   // position: relative;
-//   text-align: center;
-//   color: #000;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
+$color1: #7dc24b;
+$color2: #39700a;
+$color3: #a1ee64;
 
-//   .hero-content {
-//     position: absolute;
-//     background-image: url("/src/assets/images/header.jpg");
-
-//     max-width: 1200px;
-//     width: 100%;
-//     z-index: -1;
-//     height: auto;
-//     img {
-//       position: unset !important;
-//     }
-//   }
-// }
-.hero {
-  background-image: url("/assets/images/Header.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 900px;
-  height: auto;
-  min-height: 280px;
+.page-container {
   display: flex;
-  justify-content: center;
-}
+  flex-direction: column;
+  align-items: center;
 
-.disclaimer {
-  display: flex;
-  justify-content: center;
-  width: 900px;
-}
-
-@media screen and (max-width: 840px) {
   .hero {
     background-image: url("/assets/images/Header.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 300px;
-    min-height: 80px;
-    height: auto;
-
+    width: 900px;
+    height: 255px;
+    min-height: 280px;
     display: flex;
     justify-content: center;
   }
+
+  .construction {
+    background-image: url("/assets/images/UnderConstruction.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 640px;
+    height: 832px;
+    display: flex;
+    justify-content: center;
+    border: 2px solid $color2;
+  }
+
   .disclaimer {
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    margin-top: 30px;
+    p {
+      font-size: larger;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 840px) {
+  .page-container {
+    width: fit-content;
+    .hero {
+      background-image: url("/assets/images/HeaderMobile.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 300px;
+      min-height: 80px;
+      height: auto;
+
+      display: flex;
+      justify-content: center;
+    }
+
+    .construction {
+      background-image: url("/assets/images/UnderConstructionMobile.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 300px;
+      height: 390px;
+      min-height: 80px;
+      display: flex;
+      justify-content: center;
+      border: 2px solid $color2;
+    }
+    .disclaimer {
+      width: 300px;
+      flex-direction: column;
+    }
   }
 }
