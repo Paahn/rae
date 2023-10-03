@@ -40,11 +40,10 @@ $color3: #a1ee64;
   }
 }
 
-
-
 @media screen and (max-width: 840px) {
   .page-container {
     width: fit-content;
+
     .hero {
       background-image: url("/assets/images/HeaderMobile.jpg");
       background-repeat: no-repeat;
@@ -68,6 +67,7 @@ $color3: #a1ee64;
       justify-content: center;
       border: 2px solid $color2;
     }
+
     .disclaimer {
       width: 300px;
       flex-direction: column;
