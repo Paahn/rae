@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 50px;
+  font-size: 18px;
+  line-height: 1.7;
 
   .hero {
     background-image: url("/assets/images/Plasticulture.jpg");
@@ -13,10 +16,72 @@
     display: flex;
     justify-content: center;
   }
+
+  .exhibit-intro {
+    display: flex;
+    background-color: cornsilk;
+    padding: 50px;
+  }
+
+  .exhibit-main-1-title {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  .exhibit-main-1 {
+    display: flex;
+  }
+
+  .exhibit-main-2 {
+    display: flex;
+
+    .exhibit-main-2-text {
+      display: flex;
+    }
+
+    .exhibit-main-2-img {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 175px;
+      }
+    }
+  }
+
+  .exhibit-main-3 {
+    display: flex;
+  }
+
+  .exhibit-main-4 {
+    display: flex;
+    gap: 20px;
+
+    .exhibit-main-4-img {
+      img {
+        width: 300px;
+      }
+    }
+  }
+
+  .exhibit-main-5 {
+    display: flex;
+
+    .exhibit-main-5-img {
+      img {
+        width: 275px;
+      }
+    }
+  }
+
+  footer {
+    font-style: italic;
+  }
 }
 
 @media screen and (max-width: 840px) {
-  .page-container{
+  .page-container {
     .hero {
       background-image: url("/assets/images/Plasticulture.jpg");
       background-repeat: no-repeat;
