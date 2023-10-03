@@ -82,6 +82,8 @@
 
 @media screen and (max-width: 840px) {
   .page-container {
+    width: 300px;
+
     .hero {
       background-image: url("/assets/images/Plasticulture.jpg");
       background-repeat: no-repeat;
@@ -92,6 +94,17 @@
 
       display: flex;
       justify-content: center;
+    }
+
+    .exhibit-main-1,
+    .exhibit-main-2,
+    .exhibit-main-4,
+    .exhibit-main-5 {
+      flex-direction: column;
+    }
+
+    footer {
+      word-break: break-all;
     }
   }
 }
