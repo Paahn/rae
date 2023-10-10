@@ -97,8 +97,11 @@
     }
 
     .exhibit-main-1,
+    .exhibit-main-4 {
+      flex-direction: column-reverse;
+    }
+
     .exhibit-main-2,
-    .exhibit-main-4,
     .exhibit-main-5 {
       flex-direction: column;
     }
