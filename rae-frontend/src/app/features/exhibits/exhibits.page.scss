@@ -80,8 +80,22 @@
   }
 }
 
-@media screen and (max-width: 840px) {
+// tablet view
+@media screen and (max-width: 1199px) {
   .page-container {
+    width: 750px;
+
+    .hero {
+      width: 750px;
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 740px) {
+  .page-container {
+    width: 300px;
+
     .hero {
       background-image: url("/assets/images/Plasticulture.jpg");
       background-repeat: no-repeat;
