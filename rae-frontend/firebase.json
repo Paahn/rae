@@ -1,6 +1,16 @@
 {
   "hosting": {
-    "public": "./dist/rae-frontend",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    "public": "dist/rae-frontend",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
   }
 }
