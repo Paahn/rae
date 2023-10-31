@@ -19,6 +19,16 @@ mat-sidenav {
   .active-link {
     background-color: rgba(125, 194, 75, 0.5);
   }
+
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      color: #fff;
+      font-size: 16px;
+    }
+  }
 }
 
 .content {
