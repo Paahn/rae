@@ -16,16 +16,12 @@ const routes: Routes = [
       {
         path: ShellRoutes.HOME,
         loadChildren: () =>
-          import('../home/home-routing.module').then(
-            (m) => m.HomeRoutingModule
-          ),
+          import('../home/home.module').then((m) => m.HomeModule),
       },
       {
         path: ShellRoutes.ABOUT,
         loadChildren: () =>
-          import('../about/about-routing.module').then(
-            (m) => m.AboutRoutingModule
-          ),
+          import('../about/about.module').then((m) => m.AboutModule),
       },
       {
         path: ShellRoutes.EXHIBITS,
