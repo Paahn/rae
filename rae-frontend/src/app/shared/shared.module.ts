@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MaterialModule } from 'src/scss/material.module';
 import { NgOptimizedImage } from '@angular/common';
+import { FooterComponent } from './components/footer/footer.component';
 
 const modules = [
   CommonModule,
@@ -12,8 +13,8 @@ const modules = [
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [FooterComponent],
   imports: [modules],
-  exports: [modules],
+  exports: [modules, FooterComponent],
 })
 export class SharedModule {}
